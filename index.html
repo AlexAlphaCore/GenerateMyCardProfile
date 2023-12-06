@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <title>Tu Tarjeta de Presentación</title>
+</head>
+<body>
+  <div class="card" id="businessCard">
+    <div class="header">
+      <h1 id="name">Tu Nombre</h1>
+      <p id="jobTitle">Diseñador Gráfico</p>
+    </div>
+    <div class="content">
+      <p id="email">Email: tu@email.com</p>
+      <p id="phone">Teléfono: (123) 456-7890</p>
+      <p id="website">Web: www.tusitio.com</p>
+    </div>
+  </div>
+
+  <form id="form">
+    <label for="nameInput">Nombre:</label>
+    <input type="text" id="nameInput" placeholder="Tu Nombre">
+
+    <label for="jobInput">Puesto:</label>
+    <input type="text" id="jobInput" placeholder="Diseñador Gráfico">
+
+    <label for="emailInput">Email:</label>
+    <input type="text" id="emailInput" placeholder="tu@email.com">
+
+    <label for="phoneInput">Teléfono:</label>
+    <input type="text" id="phoneInput" placeholder="(123) 456-7890">
+
+    <label for="websiteInput">Sitio Web:</label>
+    <input type="text" id="websiteInput" placeholder="www.tusitio.com">
+
+    <button type="button" onclick="updateCard()">Actualizar Tarjeta</button>
+    <button type="button" onclick="saveAsPDF()">Guardar en PDF</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
